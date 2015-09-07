@@ -18,26 +18,27 @@ public class Arithmetic {
         double taxPercent=0.06;
          
         //Total cost of each kind of item; sales tax for that total cost
-         double pretotalSockCost$= ((sockCost$*nSocks)+(sockCost$*nSocks*taxPercent))*100;
+         double pretotalSockCost$= ((sockCost$*nSocks)+(sockCost$*nSocks*taxPercent))*100; //total cost of socks
          int sock$ = (int) pretotalSockCost$;
-         double totalSockCost$= sock$/100.0; //total cost of socks
+         double totalSockCost$= sock$/100.0;  // changing to an int and then to having 2 decimal places
          
          double pretotalGlassCost$= ((glassCost$*nGlasses)+(glassCost$*nGlasses*taxPercent))*100 ; //total cost of glasses
          int glass$ = (int) pretotalGlassCost$;
-         double totalGlassCost$= glass$/100.0;
+         double totalGlassCost$= glass$/100.0; // changing to an int and then to having 2 decimal places
          
          double preEnvelopeCost$=((envelopeCost$*nEnvelopes)+(envelopeCost$*nEnvelopes*taxPercent))*100 ; //total cost of envelopes
          int envelope$ = (int) preEnvelopeCost$;
-         double totalEnvelopeCost$= envelope$/100.0;
+         double totalEnvelopeCost$= envelope$/100.0; // changing to an int and then to having 2 decimal places
+         
         //Total cost of purchases (before tax)
          double pretotalBeforeTax$= ((sockCost$*nSocks)+(glassCost$*nGlasses)+(envelopeCost$*nEnvelopes))*100 ;
          int beforetax$= (int) pretotalBeforeTax$;
-         double totalBeforeTax$= beforetax$/100.0;
+         double totalBeforeTax$= beforetax$/100.0;// changing to an int and then to having 2 decimal places
          
          //Total actually paid for this transaction, including sales tax. 
          double preActualTotal$= (totalBeforeTax$+(totalBeforeTax$*taxPercent))*100;
          int total$= (int) preActualTotal$;
-         double ActualTotal$= total$/100.0;
+         double ActualTotal$= total$/100.0;// changing to an int and then to having 2 decimal places
          
         
          
