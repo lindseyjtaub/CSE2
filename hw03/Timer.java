@@ -15,8 +15,8 @@ public class Timer{
       int dinnerTime= myScanner.nextInt() ; // prompts user for the time they want to eat dinner and accepts the input
       
       int untilDinner= ( dinnerTime - currentTime)  ;
-      int hours = (dinnerTime - currentTime) /100 ; // to get first digits
-      int minutes= (dinnerTime - currentTime) % 100; // to get last 2 digits
+      int hours = untilDinner /100 ; // to get first digits
+      int minutes= untilDinner %100  ; // to get last 2 digits
       
       
       
