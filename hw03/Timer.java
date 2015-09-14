@@ -14,15 +14,28 @@ public class Timer{
       System.out.print("Enter the time that you will be eating dinner: ");
       int dinnerTime= myScanner.nextInt() ; // prompts user for the time they want to eat dinner and accepts the input
       
-      int untilDinner= ( dinnerTime - currentTime)  ;
-      int hours = untilDinner /100 ; // to get first digits
+      int extra;
+      int untilDinner= ( dinnerTime - currentTime)   ;
+      int hours = untilDinner /100  ; // to get first digits
       int minutes= untilDinner %100  ; // to get last 2 digits
       
-      
-      
-      System.out.println("You have " 
-      + hours + " hours and " + minutes + 
+      if ( minutes>60 ) {
+          extra = (minutes / 60);
+          hours = hours + extra;
+          int remainingMinutes = untilDinner %60;
+            System.out.println("You have " 
+      + hours + " hours and " + remainingMinutes + 
       " minutes until Dinner.");
+      }
+      
+      else {
+        System.out.println("You have " 
+        + hours + " hours and " + minutes + 
+        " minutes until Dinner.");
+      }
+      
+      
+     
       
     
         
