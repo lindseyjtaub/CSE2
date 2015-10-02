@@ -1,5 +1,5 @@
-// Lindsey Taub CSE2-110 9/18/15
-//
+// Lindsey Taub CSE2-110 9/18/15 lab #4
+// this program uses switch statements and math.random to generate a random card and tell user which card it is
 
 public class CardGenerator{
     //main method
