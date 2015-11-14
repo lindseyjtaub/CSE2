@@ -2,6 +2,11 @@
 Lindsey Taub
 CSE2
 lab12
+This code creates an array with a random amount of rows each with a random length.
+It then finds the array row with the least amount of numbers in it.
+Then it finds the largest number within the whole array.
+Then it finds the array row with the most even number.
+It then prints out the array and the above results.
 */
 public class ArrayManipulation{
     
